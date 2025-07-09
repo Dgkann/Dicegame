@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dgkann Dice Game</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-tl from-blue-600 to-red-600 h-screen flex flex-col items-center justify-center text-gray-800">
+    <div class="color-picker-container">
+        <label for="colorPicker">Choose Background Color:</label>
+        <input type="color" id="colorPicker" value="#753682" aria-label="Choose background color">
+    </div>
+
+    <div class="flex flex-col items-center mb-6">
+        <h1 class="text-4xl font-bold mb-4">Dgkann Dice Game</h1>
+    </div>
+    
+    <main class="relative w-full max-w-4xl h-96 bg-white bg-opacity-35 backdrop-blur-xl shadow-2xl rounded-lg overflow-hidden flex">
+        <div class="player player--0 flex-1 p-8 flex flex-col items-center transition-all duration-700">
+            <h2 class="name text-4xl uppercase tracking-wider mb-2">Player 1</h2>
+            <p id="score--0" class="score text-8xl font-light text-pink-700 mb-auto">0</p>
+            <div class="current bg-pink-700 opacity-80 rounded-lg text-white w-3/4 p-4 text-center transition-all duration-700">
+                <p class="current-label uppercase mb-2 text-lg text-gray-300">Current</p>
+                <p id="current--0" class="current-score text-3xl">0</p>
+            </div>
+        </div>
+        
+        <div class="player player--1 flex-1 p-8 flex flex-col items-center transition-all duration-700">
+            <h2 class="name text-4xl uppercase tracking-wider mb-2">Player 2</h2>
+            <p id="score--1" class="score text-8xl font-light text-pink-700 mb-auto">0</p>
+            <div class="current bg-pink-700 opacity-80 rounded-lg text-white w-3/4 p-4 text-center transition-all duration-700">
+                <p class="current-label uppercase mb-2 text-lg text-gray-300">Current</p>
+                <p id="current--1" class="current-score text-3xl">0</p>
+            </div>
+        </div>
+        
+        <img src="dice.png" alt="Dice" class="dice hidden absolute left-1/2 top-32 transform -translate-x-1/2 h-32 shadow-lg">
+    </main>
+
+    <button class="btn btn--new text-lg py-2 px-6 mb-4">🔄 New game</button>
+    <button class="btn btn--roll text-lg py-2 px-6 mb-4">🎲 Roll dice</button>
+    <button class="btn btn--hold text-lg py-2 px-6">📥 Hold</button>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
