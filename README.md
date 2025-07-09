@@ -46,9 +46,9 @@ Features
 Tech Stack
 ----------
 
-*   **HTML5:** For the basic structure of the page.
+*   **HTML:** For the basic structure of the page.
     
-*   **CSS3:** For basic styling and visual adjustments.
+*   **CSS:** For basic styling and visual adjustments.
     
 *   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
     
